@@ -1,0 +1,357 @@
+/* --------------------------------------
+  Default Styling
+-------------------------------------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #3a4454;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+h1, h2{
+  font-family: "Piazzolla", "Times New Roman", "YuMincho",
+    "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  line-height: 1.4;
+}
+
+h2, h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+h1{
+  margin-top: 0;
+  font-weight: 500;
+}
+
+
+
+h1, h2{
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+p {
+  line-height: 1.8;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, input, textarea {
+  transition: all 0.15s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+/* --------------------------------------
+  Reusable Classes
+-------------------------------------- */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  color: #FFF7F7;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: #53687E;
+}
+
+.button-secondary {
+  background: #6B4E71;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background-color: #495B6F;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background: #5D4462;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+.social-links li + li {
+  margin-left: 20px;
+}
+
+/* --------------------------------------
+  Header
+-------------------------------------- */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: #8b0000;
+  color: #FFF7F7;
+  font-family: "Piazzolla", "Times New Roman", "YuMincho",
+    "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-weight: 700;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-menu {
+  display: flex;
+}
+
+.header-nav-menu-item > a {
+  color: #FFF7F7;
+}
+
+.header-nav-menu-item > a:hover,
+.header-nav-menu-item > a:focus {
+  color: #FFC4C4;
+}
+
+/* --------------------------------------
+  Main - Profile
+-------------------------------------- */
+
+.main-hero {
+  background-color: #8b0000;
+}
+
+.main-hero-highlight,
+.main-hero-highlight-links a {
+  color: #FFF7F7;
+}
+
+.main-hero-highlight-links p {
+  font-size: 1.2rem;
+}
+
+.main-hero-highlight-links p > a {
+  text-decoration: underline;
+}
+
+.main-hero-highlight-links a:hover,
+.main-hero-highlight-links a:focus {
+  color: #FFC4C4;
+}
+
+/* --------------------------------------
+  Main - Research
+-------------------------------------- */
+
+.main-works {
+  background-color: #FFF7F7;
+}
+
+.main-works-item:last-child {
+  margin-bottom: 0;
+}
+
+.main-works-item-img img {
+  border-radius: 5px;
+}
+
+.main-works-item-img.primary img {
+  box-shadow:
+    1px 1px 10px rgba(0, 0, 0, 15%),
+    10px 10px 0 #53687E;
+}
+
+.main-works-item-img.secondary img {
+  box-shadow:
+    1px 1px 10px rgba(0, 0, 0, 15%),
+    10px 10px 0 #6B4E71;
+}
+
+/* --------------------------------------
+  Main - Publication
+-------------------------------------- */
+
+.main-about {
+  background-color: #FFF;
+}
+
+.main-about-addition-skills ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.main-about-addition-follow a {
+  color: #C2B2B4;
+}
+
+.main-about-addition-follow a:hover,
+.main-about-addition-follow a:focus {
+  color: #AB9698;
+}
+
+.row{
+  color: black;
+}
+
+/* --------------------------------------
+  Footer
+-------------------------------------- */
+
+.footer {
+  background-color: #8b0000;
+  color: #FFF7F7;
+}
+
+.footer-form form,
+.footer-form-input,
+.footer-form-textarea {
+  width: 100%;
+}
+
+.footer-form-input {
+  position: relative;
+}
+
+.footer-form-input i {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #fff7f7;
+}
+
+.footer-form-input input {
+  padding: 10px 15px 10px 40px;
+}
+
+.footer-form-textarea textarea {
+  height: 150px;
+  padding: 10px 15px;
+  resize: none;
+}
+
+.footer-form-input input,
+.footer-form-textarea textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #C2B2B4;
+  border-radius: 5px;
+  color: #FFF7F7;
+}
+
+.footer-form-input input::placeholder,
+.footer-form-textarea textarea::placeholder {
+  color: #9C9DA5;
+}
+
+.footer-form-input input:hover,
+.footer-form-input input:focus,
+.footer-form-textarea textarea:hover,
+.footer-form-textarea textarea:focus {
+  background-color: rgba(0, 0, 0, 10%);
+}
+
+.footer-form-input input:focus-visible,
+.footer-form-textarea textarea:focus-visible {
+  outline: 1px solid #C2B2B4;
+  border: 1px solid #C2B2B4;
+}
+
+.footer-info-nav-menu ul {
+  font-family: "Piazzolla", "Times New Roman", "YuMincho",
+    "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.footer-info-nav-menu a {
+  color: #FFF7F7;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-info-nav-menu a:hover,
+.footer-info-nav-menu a:focus {
+  color: #9C9DA5;
+}
+
+.footer-info-follow a {
+  color: #9D9DA5;
+  font-size: 1.5rem;
+}
+
+.footer-info-follow a:hover,
+.footer-info-follow a:focus {
+  color: #81838D;
+}
+
+.footer-info-copy {
+  color: #9C9DA5;
+}
+.footer-info-nav {
+  justify-content: center;
+}
+
+/* --------------------------------------
+  Page - Work
+-------------------------------------- */
+
+.work h1 {
+  margin-bottom: 0;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+.main-article-container {
+  max-width: 750px;
+}
+
+.main-article-topic {
+  margin-bottom: 60px;
+}
+
+.main-article-topic:last-child {
+  margin-bottom: 0;
+}
+
+.main-article-topic img {
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
