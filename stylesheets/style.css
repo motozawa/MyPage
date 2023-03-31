@@ -11,14 +11,12 @@ html {
 }
 
 body {
-  color: #3a4454;
-  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  color: #283448;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 h1, h2{
-  font-family: "Piazzolla", "Times New Roman", "YuMincho",
-    "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   line-height: 1.4;
 }
 
@@ -66,6 +64,20 @@ a, input, textarea {
 
 input[type="submit"]:hover {
   cursor: pointer;
+}
+
+a:link{
+  color: #283448;
+}
+
+a:hover{
+  color: #698ecd;
+}
+a:active{
+  color: #283448;
+}
+a:visited{
+  color: navy;
 }
 
 /* --------------------------------------
@@ -130,8 +142,7 @@ input[type="submit"]:hover {
   width: 100%;
   background-color: #8b0000;
   color: #FFF7F7;
-  font-family: "Piazzolla", "Times New Roman", "YuMincho",
-    "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   font-weight: 700;
 }
 
@@ -150,7 +161,7 @@ input[type="submit"]:hover {
 
 .header-nav-menu-item > a:hover,
 .header-nav-menu-item > a:focus {
-  color: #FFC4C4;
+  color: #b85050;
 }
 
 /* --------------------------------------
@@ -297,8 +308,7 @@ input[type="submit"]:hover {
 }
 
 .footer-info-nav-menu ul {
-  font-family: "Piazzolla", "Times New Roman", "YuMincho",
-    "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .footer-info-nav-menu a {
@@ -335,8 +345,7 @@ input[type="submit"]:hover {
 
 .work h1 {
   margin-bottom: 0;
-  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .main-article-container {
