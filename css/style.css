@@ -1,0 +1,672 @@
+/* --------------------------------------
+  Default Styling
+-------------------------------------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  color: #856600;
+  font-family: 'Train One', sans-serif;
+}
+
+h1, h2{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  line-height: 1.4;
+}
+
+h2, h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+h1{
+  margin-top: 0;
+  font-weight: 500;
+}
+
+
+
+h1, h2{
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+p {
+  line-height: 1.8;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, input, textarea {
+  transition: all 0.15s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+a:link{
+  color: #856600;
+}
+
+a:hover{
+  color: #e0cd8f;
+}
+a:active{
+  color: #e0cd8f;
+}
+a{
+  color: #856600;
+}
+
+.initial{
+  font-size: 300%;
+}
+
+hr{
+  width:90%;
+}
+
+.title{
+  margin-block-end: 0px;
+}
+
+/* --------------------------------------
+  Reusable Classes
+-------------------------------------- */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  color: #FFF7F7;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.button-primary {
+  background-color: #53687E;
+}
+
+.button-secondary {
+  background: #6B4E71;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background-color: #495B6F;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background: #5D4462;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+.social-links li + li {
+  margin-left: 20px;
+}
+
+.haikei{
+  background-image: url(../images/haikei.png);
+  background-repeat:  repeat;
+}
+
+/* --------------------------------------
+  Header
+-------------------------------------- */
+
+.header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  z-index: 2;
+  width: 100%;
+  height: 60px;
+  padding: 40px 30px;
+  top: 20px;
+  background-color: rgba( 255, 255, 255, 0.49 );
+  /*color: #FFF7F7;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 700;
+  border-radius: 40px; /* ボックスの四つ角を丸くする */ 
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+
+.header-nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-menu-item > a {
+  color: gray;
+  font-size: 12px;
+}
+
+.header-nav-menu-item > a:hover,
+.header-nav-menu-item > a:focus {
+  color: #b85050;
+}
+
+/* --------------------------------------
+  Main - Profile
+-------------------------------------- */
+
+.hero {
+  height:650px;
+  background-image: url(../images/haikei1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* text-align: center; */
+  /* margin: auto; */
+
+}
+
+.LabLogo{
+  opacity: 0.4;
+  height: auto;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.hero-name{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Caveat', cursive;
+  /* color: #856600; */
+  color: white;
+  font-size: 6vw;
+  width:100%;
+}
+
+.main-hero-container{
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+.w-container{
+  width: min(92%, 1166px);
+  margin: auto;
+  position: relative;
+}
+
+.main-hero-highlight-links p {
+  font-size: 1.2rem;
+}
+
+.main-hero-highlight-links p > a {
+  text-decoration: underline;
+}
+
+.main-hero-highlight-links a:hover,
+.main-hero-highlight-links a:focus {
+  color: #FFC4C4;
+}
+
+.main-hero img{
+  width:100%;
+  height:auto;
+}
+
+.main-hero-highlight h1{
+  position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0;
+    font-size:30px;
+}
+/* --------------------------------------
+  Main - Research
+-------------------------------------- */
+.container-aboutme{
+  background-color: #F8FAF6;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Thasadith', sans-serif;
+}
+.title-aboutme{
+  color:#58803C;
+  font-size: 3vw;
+  font-family: 'Thasadith', sans-serif;
+}
+
+.ini-aboutme{
+  color:#B8D4A4;
+  font-size: 7vw;
+  font-family: 'Thasadith', sans-serif;
+}
+
+.hr-aboutme{
+  color:#58803C;
+}
+
+.profile-img{
+  width:40%;
+  height: auto;
+  border-radius:50%;
+  margin-left: auto;
+  margin-right: 0;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.profile-text{
+  width:50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 25px;
+  color:#856600;
+}
+
+.flex {
+  display: flex; /*横並び*/
+  padding: 5%;
+  column-gap: 25px;
+}
+
+/* --------------------------------------
+  Main - Research
+-------------------------------------- */
+
+.container-research{
+  background-color: #FEFBFB;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-research{
+  color:#D00213;
+  font-size: 3vw;
+  font-family: 'Thasadith', sans-serif;
+}
+
+.ini-research{
+  color:#FEA7AE;
+  font-size: 7vw;
+  font-family: 'Thasadith', sans-serif;
+}
+
+.hr-research{
+  color:#D00213;
+}
+
+.research-text{
+  width:50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
+  color:#856600;
+  text-align:left;
+  font-family: 'Thasadith','Zen Maru Gothic', sans-serif;
+}
+
+.research-img{
+  border-radius: 5px;
+  width:40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: 0;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.main-works-item:last-child {
+  margin-bottom: 0;
+}
+
+.main-works-item-img img {
+  border-radius: 5px;
+}
+
+.main-works-item-img.primary img {
+  box-shadow:
+    1px 1px 10px rgba(0, 0, 0, 15%),
+    10px 10px 0 #53687E;
+}
+
+.main-works-item-img.secondary img {
+  box-shadow:
+    1px 1px 10px rgba(0, 0, 0, 15%),
+    10px 10px 0 #6B4E71;
+}
+
+/* --------------------------------------
+  Main - Publication
+-------------------------------------- */
+
+.container-publication{
+  background-color: #FFFFF7;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-publication{
+  color:#856600;
+  font-size: 3vw;
+  font-family: 'Thasadith','Zen Maru Gothic', sans-serif;
+}
+
+.ini-publication{
+  color:#FFC70A;
+  font-size: 7vw;
+  font-family: 'Thasadith','Zen Maru Gothic', sans-serif;
+}
+
+.hr-publication{
+  color:#856600;
+}
+
+.publication-text{
+  width:90%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
+  color:#856600;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Thasadith','Zen Maru Gothic', sans-serif;
+}
+.publication-category{
+  font-size: 25px;
+  padding:0 10px;
+  line-height:2;
+  background: radial-gradient(circle at calc(100% - 7px) calc(100% - 7px), #F1EAF5 7px, transparent 7px) ,
+              radial-gradient(circle at 7px calc(100% - 7px), #F1EAF5 7px, transparent 7px) ,
+              linear-gradient(to bottom, #FFFFF7 calc(100% - 14px), transparent calc(100% - 14px)) ,
+              linear-gradient(to right, transparent 7px, #F1EAF5 7px, #F1EAF5 calc(100% - 7px), transparent calc(100% - 7px));
+}
+
+.publication-category.conference{
+  width: 220px;
+}
+
+.publication-category.othercan{
+  width: 220px;
+}
+
+.publication-category.other{
+  width: 120px;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+.main-about {
+  background-color: #FFF;
+}
+
+.main-about-addition-skills ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.main-about-addition-follow a {
+  color: #C2B2B4;
+}
+
+.main-about-addition-follow a:hover,
+.main-about-addition-follow a:focus {
+  color: #AB9698;
+}
+
+.row{
+  color: #856600
+}
+
+/* --------------------------------------
+  Footer
+-------------------------------------- */
+
+.footer {
+  background-color: #8b0000;
+  color: #FFF7F7;
+}
+
+.footer-form form,
+.footer-form-input,
+.footer-form-textarea {
+  width: 100%;
+}
+
+.footer-form-input {
+  position: relative;
+}
+
+.footer-form-input i {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #fff7f7;
+}
+
+.footer-form-input input {
+  padding: 10px 15px 10px 40px;
+}
+
+.footer-form-textarea textarea {
+  height: 150px;
+  padding: 10px 15px;
+  resize: none;
+}
+
+.footer-form-input input,
+.footer-form-textarea textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #C2B2B4;
+  border-radius: 5px;
+  color: #FFF7F7;
+}
+
+.footer-form-input input::placeholder,
+.footer-form-textarea textarea::placeholder {
+  color: #9C9DA5;
+}
+
+.footer-form-input input:hover,
+.footer-form-input input:focus,
+.footer-form-textarea textarea:hover,
+.footer-form-textarea textarea:focus {
+  background-color: rgba(0, 0, 0, 10%);
+}
+
+.footer-form-input input:focus-visible,
+.footer-form-textarea textarea:focus-visible {
+  outline: 1px solid #C2B2B4;
+  border: 1px solid #C2B2B4;
+}
+
+.footer-info-nav-menu ul {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.footer-info-nav-menu a {
+  color: #FFF7F7;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-info-nav-menu a:hover,
+.footer-info-nav-menu a:focus {
+  color: #9C9DA5;
+}
+
+.footer-info-follow a {
+  color: #9D9DA5;
+  font-size: 1.5rem;
+}
+
+.footer-info-follow a:hover,
+.footer-info-follow a:focus {
+  color: #81838D;
+}
+
+.footer-info-copy {
+  color: #9C9DA5;
+}
+.footer-info-nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.footer-info-nav-img{
+  width: 120px;
+  float: left;
+  margin-left:40px;
+}
+
+.footer-info-nav-copywrite{
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* --------------------------------------
+  Page - Work
+-------------------------------------- */
+
+.work h1 {
+  margin-bottom: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.main-article-container {
+  max-width: 750px;
+}
+
+.main-article-topic {
+  margin-bottom: 60px;
+}
+
+.main-article-topic:last-child {
+  margin-bottom: 0;
+}
+
+.main-article-topic img {
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+/*==================================================
+　5-3-5 左から右に背景が伸びる
+===================================*/
+
+/*共通　横並びのための設定*/
+
+.gnavi{
+  display: flex;
+  flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin:0 0 50px 0;
+  list-style: none;
+}
+
+.gnavi li a{
+  padding:10px 30px;
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.gnavi li{
+  margin-bottom:20px;
+}
+
+/*背景の設定*/
+
+.gnavi li a{
+  /*背景色の基点とするためrelativeを指定*/
+position: relative;
+}
+
+.gnavi li a::after {
+content: '';
+  /*絶対配置で線の位置を決める*/
+position: absolute;
+z-index: -1;
+bottom: 0;
+left: 0;
+  /*背景の形状*/
+width: 0;
+height:100%;
+background:#050505;
+  /*アニメーションの指定*/
+transition:all .5s;
+opacity: 0;/*はじめは透過0*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+  /*背景の形状*/
+width: 100%;/*横幅を伸ばす*/
+opacity: 1;/*不透明に*/
+}
+
+.gnavi li.current a,
+.gnavi li a:hover{
+  color: #fff;
+}
