@@ -433,6 +433,7 @@ hr{
               linear-gradient(to right, transparent 7px, #F1EAF5 7px, #F1EAF5 calc(100% - 7px), transparent calc(100% - 7px));
 }
 
+
 .publication-category.conference{
   width: 220px;
 }
@@ -443,6 +444,10 @@ hr{
 
 .publication-category.other{
   width: 120px;
+}
+
+.publication-category.jj{
+  width: 220px;
 }
 
 li{
